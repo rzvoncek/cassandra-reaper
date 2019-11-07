@@ -174,8 +174,6 @@ Optional setting to allow Reaper to establish JMX connections to Cassandra clust
       username: cassandra
       password: cassandra
 
-      #### `username`
-
 #### `username`
 
 Type: *String*
@@ -187,6 +185,28 @@ Cassandra JMX username.
 Type: *String*
 
 Cassandra JMX password.
+
+<br/>
+
+### `jmxmp`
+
+Optional setting to allow Reaper to establish JMX connections to Cassandra clusters using TCP connection. 
+
+    jmxmp:
+      enabled: false
+      ssl: false
+      
+#### `enabled`
+
+Type: *Boolean*
+
+Enable JMX over TCP.
+
+#### `ssl`
+
+Type: *Boolean*
+
+Enable JMXMP over SSL.
 
 <br/>
 

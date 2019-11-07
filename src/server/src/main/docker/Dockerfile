@@ -69,7 +69,9 @@ ENV REAPER_SEGMENT_COUNT=200 \
     REAPER_AUTH_USER="" \
     REAPER_AUTH_PASSWORD="" \
     REAPER_SHIRO_INI="" \
-    JAVA_OPTS=""
+    JAVA_OPTS="" \
+    REAPER_JMXMP_ENABLED="false" \
+    REAPER_JMXMP_SSL="false"
 
 ADD cassandra-reaper.yml /etc/cassandra-reaper.yml
 ADD shiro.ini /etc/shiro.ini
