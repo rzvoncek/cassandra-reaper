@@ -20,7 +20,7 @@ cat <<EOT >> /etc/cassandra-reaper.yml
 jmxAddressTranslator:
   type: ${JMX_ADDRESS_TRANSLATOR_TYPE}
 EOT
-
+fi
 
 case ${REAPER_STORAGE_TYPE} in
     "cassandra")
